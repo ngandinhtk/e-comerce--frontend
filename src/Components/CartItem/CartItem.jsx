@@ -33,7 +33,8 @@ export const CartItem = () => {
           </div>
             
           }
-          return null
+          
+          return console.log('?');
       })}
       <div className="cartitems-down">
         <div className="cartitems-total">

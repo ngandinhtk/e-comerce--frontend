@@ -25,7 +25,8 @@ function Navbar() {
          <img src={logo} alt="" />
          <p>SHOPPER</p>
       </div>
-      <img className='nav-dropdown' onClick={dropdown_toggle} src={nav_dropdown} alt="" />
+      {/* <img className='nav-dropdown' onClick={dropdown_toggle} src={nav_dropdown} alt="" /> */}
+      <i class="fa fa-bars"></i>
       <ul ref={menuRef} className="nav-menu">
          <li className='tabmenu' onClick={()=>{setMenu("shop")}}> <Link to="/">Shop</Link> {menu === "shop" ? <hr /> : <></> }  </li>
          <li className='tabmenu' onClick={()=>{setMenu("men")}}> <Link to="/men">Men</Link> {menu === "men" ? <hr /> : <></> } </li>
